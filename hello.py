@@ -28,3 +28,15 @@ fig = px.scatter(
 )
 
 plotly(fig)
+
+text("")
+
+fig2 = px.scatter(
+    df,
+    x="wind",
+    y="precipitation",
+    color="weather",
+    title="Wind Speed vs Precipitation by Weather Type",
+    labels={"wind": "Wind Speed (km/h)", "precipitation": "Precipitation (mm)"}
+)
+plotly(fig2)
