@@ -1,0 +1,20 @@
+[project]
+title = "Seattle Weather Insights"
+version = "0.1.0"
+port = 8501
+slug = "seattle-weather-insights"
+entrypoint = "hello.py"
+
+[branding]
+name = "Seattle Weather Insights"
+logo = "images/weather-logo1.jpg"         
+favicon = "images/weather_icon.ico"
+primaryColor = "#1E90FF"
+
+[data.seattle_weather_csv]
+type = "csv"
+path = "data/seattle-weather.csv"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
