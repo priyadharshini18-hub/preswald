@@ -5,7 +5,6 @@ connect()
 
 df = get_df("seattle_weather_csv")
 
-# Filter rows where weather is 'rain' and precipitation > 5
 sql = """
 SELECT * 
 FROM seattle_weather_csv
@@ -18,8 +17,6 @@ text("My name is Priyadharshini Ganeshkumar, MSCS student from UC Davis. Here is
 
 text("I have used `seattle-weather.csv` from Kaggle. The following are the columns present in the data:\n\n- `date`\n- `precipitation`\n- `temp_max`\n- `temp_min`\n- `wind`\n- `weather`")
 
-
-# table(filtered_df, title="Filtered Rainy Days with Heavy Precipitation")
 
 fig = px.scatter(
     df,
